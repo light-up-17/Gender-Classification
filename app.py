@@ -140,6 +140,7 @@ def predict():
 def health():
     return jsonify({"status": "healthy", "device": str(DEVICE)})
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 10000))  # Render gives PORT
+    app.run(host="0.0.0.0", port=port)
 
