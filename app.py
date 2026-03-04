@@ -15,7 +15,7 @@ CORS(app)
 
 # Configuration
 MODEL_PATH = os.path.join(os.path.dirname(__file__), 'GCM_ep4_f1_0.9577.pth')
-DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+DEVICE = torch.device('cpu')
 
 # Define the model architecture - SAME as training code
 class GenderClassifier(nn.Module):
