@@ -7,5 +7,5 @@ albumentations
 timm
 
 --extra-index-url https://download.pytorch.org/whl/cpu
-torch==2.2.2+cpu
-torchvision==0.17.2+cpu
+torch==2.3.1+cpu
+torchvision==0.18.1+cpu
